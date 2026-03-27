@@ -1,3 +1,28 @@
+/**
+ * App component - Main application entry point
+ * 
+ * A React component that displays a welcome interface with:
+ * - A hero section featuring Vite and React logos with an interactive counter
+ * - Documentation links for Vite and React resources
+ * - Social media connections to the Vite community
+ * 
+ * @component
+ * @returns {JSX.Element} The rendered application UI with hero section, documentation links, and social media connections
+ * 
+ * @example
+ * ```tsx
+ * import App from './App'
+ * 
+ * export default App
+ * ```
+ * 
+ * @remarks
+ * - Uses React hooks (useState) to manage the counter state
+ * - Features HMR (Hot Module Replacement) for development experience
+ * - Contains responsive layout with multiple sections separated by dividers
+ * - All external links open in new tabs (_blank)
+ * - Includes SVG icons for documentation and social media
+ */
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
@@ -5,7 +30,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState<number>(0)
 
   return (
     <>
