@@ -70,6 +70,13 @@
   }
 }
 
+#todo {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid var(--border);
+}
+
 #next-steps {
   display: flex;
   border-top: 1px solid var(--border);
